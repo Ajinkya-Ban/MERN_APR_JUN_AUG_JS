@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        h2{
+            text-align: center;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black;
+        }
+        input{
+            width: 200px;
+            height: 30px;
+        }
+        #feedback{
+            width: 100%;
+            height: 100px;
+            border: 1px solid black;
+        }
+        #btn{
+            width: 200px;
+            height: 34px;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Feedback System</h2>
+    <table>
+        <tr>
+            <td><input type="text" id="name" placeholder="Enter the grades(A,B,C,D,E)" required autocomplete="off"></td>
+            <td><button id="btn" onclick="showFeedBack()">Show Feedback</button></td>
+        </tr>
+        <tr>
+           
+            <td colspan="2">
+                <div id="feedback"></div>
+            </td>
+           
+        </tr>
+    </table>
+    
+   
+    <script src="../conditional_statements/condittional_js/feedback.js" type="text/javascript"></script>
+</body>
+</html>

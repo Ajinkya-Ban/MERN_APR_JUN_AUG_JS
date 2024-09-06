@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #day{
+            width: 100px;
+            height: 25px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #btn{
+            width: 100px;
+            height: 35px;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: green;
+            color: white;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+        #result{
+            width: 300px;
+            height: 100px;
+            font-size: 20px;
+            font-weight: bold;
+            border: 2px solid black;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>Select a day</h2>
+    <select id="day">
+        <option value="monday">Monday</option>
+        <option value="tuesday">Tuesday</option>
+        <option value="wednesday">Wednesday</option>
+        <option value="thursday">Thursday</option>
+        <option value="friday">Friday</option>
+        <option value="saturday">Saturday</option>
+        <option value="sunday">Sunday</option>
+    </select>
+
+    <button id="btn" onclick="showMessage()">Click Me</button>
+    <div id="result"></div>
+    <script type="text/javascript" src="../conditional_statements/condittional_js/switch_demo.js"></script>
+</body>
+</html>
