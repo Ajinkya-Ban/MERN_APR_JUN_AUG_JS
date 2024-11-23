@@ -68,18 +68,89 @@
 
 //3. classList:
 
-var element;
-document.querySelector("#header").classList.add("demo","demo2");
-element = document.querySelector("#header").classList;
-console.info("Before remove the class the list is");
-console.log(element.length);
+// var element;
+// document.querySelector("#header").classList.add("demo","demo2");
+// element = document.querySelector("#header").classList;
+// console.info("Before remove the class the list is");
+// console.log([...element]);
 
-// i want to remove class from document then,
+// // i want to remove class from document then,
 
-//
-console.info("After remove the class the list is");
-document.querySelector("#header").classList.remove("demo2");
-console.log(element.length);
+// console.info("After remove the class the list is");
+// document.querySelector("#header").classList.remove("demo2");
+// console.log([...element]);
+
+// document.querySelector("#header").classList.add("demo");
+// document.querySelector("#header").addEventListener("click",functToggle);
+
+// function functToggle(){
+// document.querySelector("#header").classList.toggle("demo2");
+// }
+
+
+// document.querySelector("#header").addEventListener("click",functToggle);
+
+// function functToggle(){
+// var ele = document.querySelector("#header").classList.contains("demo2");
+// console.log(ele);
+// if(ele)
+// {
+//     document.querySelector("#header").classList.remove("demo2");
+// }
+// }
+// var ele = document.querySelector("#header").classList.item(1);
+// console.log(ele);
+
+
+//DOM Traversal Methods
+//--------------------------
+//document.querySelector("#main-list").children[0].style.color = "red";
+// var ele = document.querySelector("#main-list").nextSibling;
+// console.log(ele);
+
+// createElement method
+
+// setTimeout(()=>{
+//     var newDiv = document.createElement('div');
+//     newDiv.id = "newdiv";
+//     // document.body.appendChild(newDiv);
+//     document.querySelector(".text").appendChild(newDiv);
+//     var newPara = document.createElement("p");
+    
+//     newPara.style.padding = "10px";
+//     var addText = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus aperiam ea, quibusdam, error saepe architecto, doloremque tempore animi ut tempora placeat fuga. Ea ipsa adipisci fugiat nemo totam perferendis sed et, eius distinctio aliquid nesciunt facere eligendi! Eos sint tenetur, sit facere soluta, exercitationem maiores aut, adipisci sequi suscipit praesentium.");
+    
+//     newPara.appendChild(addText);
+//     document.getElementById("newdiv").appendChild(newPara);
+// }, 5000);
+
+    var newDiv = document.createElement('div');
+    newDiv.id = "newdiv";
+    // document.body.appendChild(newDiv);
+    document.querySelector(".text").appendChild(newDiv);
+    var newPara = document.createElement("p");
+    // newPara.id="myid";
+    newPara.style.padding = "10px";
+    var addText = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus aperiam ea, quibusdam, error saepe architecto, doloremque tempore animi ut tempora placeat fuga. Ea ipsa adipisci fugiat nemo totam perferendis sed et, eius distinctio aliquid nesciunt facere eligendi! Eos sint tenetur, sit facere soluta, exercitationem maiores aut, adipisci sequi suscipit praesentium.");
+    
+    newPara.appendChild(addText);
+    document.getElementById("newdiv").appendChild(newPara);
+
+    var headingTag = document.createElement("h2");
+    headingTag.style.padding = "10px";
+    var headingText = document.createTextNode("Our Aim");
+    headingTag.appendChild(headingText);
+    
+    var target = document.getElementById("newdiv");
+    target.insertBefore(headingTag,target.childNodes[0]);
+    //target.prepend(headingTag);
+    // document.getElementById("newdiv").appendChild(headingTag);
+  
+    var comnt = document.createComment(newDiv.childNodes[0]);
+    // document.getElementById("newdiv").appendChild(comnt);
+    console.log(comnt);
+
+
 
 
 

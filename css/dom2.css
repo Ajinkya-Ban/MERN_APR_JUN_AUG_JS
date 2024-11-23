@@ -32,7 +32,8 @@
 }
 .demo2
 {
-    font-style: italic;
+    background-color: teal;
+    color: white;
 }
 #menu{
     width: 100%;
@@ -87,7 +88,19 @@
   .text p{
     text-align: justify;
   }
-
+#main-list{
+    border: 4px solid purple;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#main-list .list{
+    list-style-position: inside;
+    padding-left: 20px;
+}
+.list ul li{
+    
+    color: purple;
+}
 .sidebar{
     padding-right: 10px;
     background-color: #A74AC7;
@@ -119,7 +132,9 @@
     width: 32%;
     height: 200px;
     border: 1px solid #000;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer p{
@@ -128,4 +143,11 @@
     padding-top: 20px;
     font-size: 16px;
     padding-right: 10px;
+}
+
+#newdiv
+{
+    border: 4px solid purple;
+    width: 100%;
+    min-height: 100px;
 }
