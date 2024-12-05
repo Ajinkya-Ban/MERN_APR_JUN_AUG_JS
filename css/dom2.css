@@ -136,7 +136,9 @@
     justify-content: center;
     align-items: center;
 }
-
+.footer{
+    margin-top: 10px;
+}
 .footer p{
     color: white;
     text-align: right;

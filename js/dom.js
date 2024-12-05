@@ -146,9 +146,9 @@
     //target.prepend(headingTag);
     // document.getElementById("newdiv").appendChild(headingTag);
   
-    var comnt = document.createComment(newDiv.childNodes[0]);
-    // document.getElementById("newdiv").appendChild(comnt);
-    console.log(comnt);
+    // var comnt = document.createComment(newDiv.childNodes[0]);
+    // // document.getElementById("newdiv").appendChild(comnt);
+    // console.log(comnt);
 
 
 
