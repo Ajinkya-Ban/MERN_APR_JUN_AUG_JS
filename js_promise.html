@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
 </head>
 <body>
     <h1>Promises In JS</h1>
+    <button id="soundClick">Click Me...</button>
+
+    <script type="text/javascript">
+        const music = new Audio("https://www.soundjay.com/buttons/sounds/button-19.mp3");
+
+        document.getElementById("soundClick").addEventListener('click', function(){
+            music.play();
+            Swal.fire({
+            title: "Drag me!",
+            icon: "success",
+            draggable: true
+            });
+        });
+    </script>
+    
     <script type="text/javascript" src="js/promises.js"></script>
 </body>
 </html>
